@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "humanintelligence"
+version = "0.0.1"
+description = "Plain-English words for machine learning, deep learning and AI in Python (early development). Import as hi."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+authors = [{ name = "Manish Prakash Victor" }]
+keywords = ["machine learning", "deep learning", "education"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/humanintelligence"]
